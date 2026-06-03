@@ -39,64 +39,58 @@ https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset
 
 ---
 
+### Main Features
+
+| Column | Meaning |
+|---|---|
+| Type | Product quality type: L, M, or H |
+| Air temperature [K] | Ambient air temperature |
+| Process temperature [K] | Process operating temperature |
+| Rotational speed [rpm] | Machine rotational speed |
+| Torque [Nm] | Torque applied by the machine |
+| Tool wear [min] | Accumulated tool usage time |
+| Machine failure | Target variable |
+
+### Columns Excluded From Modeling
+
+Some columns were excluded because they are identifiers or can cause data leakage:
+
+| Column | Reason |
+|---|---|
+| UDI | Unique ID, not useful for prediction |
+| Product ID | Identifier, not useful for generalization |
+| TWF, HDF, PWF, OSF, RNF | Failure-type labels that leak information about the target |
+
+---
+
 ## Project Structure
 
-```plaintext
-predictive-maintenance/
+Current project structure:
+
+```text
+Predictive-Maintenance-Project/
 │
 ├── data/
+│   ├── raw/
+│   │   └── ai4i2020.csv
+│   └── processed/
+│
 ├── notebooks/
+│   ├── 01_eda.ipynb
+│   ├── 02_modeling.ipynb
+│   └── 03_threshold_tuning.ipynb
+│
 ├── src/
-├── models/
+│   ├── preprocessing.py
+│   ├── features.py
+│   ├── train.py
+│   └── evaluate.py
+│
 ├── reports/
+│   └── figures/
+│
+├── models/
+│
 ├── README.md
-└── requirements.txt
-```
-
----
-
-## Current Progress
-
-- [x] Project setup
-- [ ] Exploratory Data Analysis
-- [ ] Data preprocessing
-- [ ] Baseline model
-- [ ] Model comparison
-- [ ] Hyperparameter tuning
-- [ ] MLflow integration
-- [ ] Deployment
-
----
-
-## How to Run
-
-Clone the repository:
-
-```bash
-git clone <repo-link>
-```
-
-Create virtual environment:
-
-```bash
-python -m venv venv
-```
-
-Activate environment:
-
-### Windows
-```bash
-venv\Scripts\activate
-```
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-## Author
-
-Mohamed Hamzawi
+├── requirements.txt
+└── .gitignore
