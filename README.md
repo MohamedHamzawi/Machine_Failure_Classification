@@ -94,3 +94,23 @@ Predictive-Maintenance-Project/
 ├── README.md
 ├── requirements.txt
 └── .gitignore
+```
+---
+## Current Progress Checklist
+
+- [x] Data understanding completed
+- [x] EDA completed
+- [x] Feature engineering started
+- [x] Baseline modeling completed
+- [x] Validation evaluation completed
+- [x] Threshold tuning completed
+- [ ] Final model selection not completed yet
+- [ ] Final threshold selection not completed yet
+- [ ] Test set evaluation not completed yet
+- [ ] Error analysis not completed yet
+- [ ] Explainability not completed yet
+- [ ] Model saving not completed yet
+- [ ] Streamlit app not started yet
+- [ ] Final report not completed yet
+
+---
