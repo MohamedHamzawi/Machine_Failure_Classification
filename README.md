@@ -619,8 +619,9 @@ Run locally:
 
 ```bash
 streamlit run app.py
-
-Live app: https://machinefailureclassification-qvkaq849zn6rlxtvl6n7yp.streamlit.app/
+```
+Live app:
+```<https://machinefailureclassification-qvkaq849zn6rlxtvl6n7yp.streamlit.app/>
 ```
 ---
 
