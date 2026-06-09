@@ -7,5 +7,7 @@ predictive_maintenance.egg-info/top_level.txt
 src/__init__.py
 src/evaluation.py
 src/feature_engineering.py
+src/inference.py
+src/interpretation.py
 src/modeling.py
 src/preprocessing.py
