@@ -621,7 +621,8 @@ Run locally:
 streamlit run app.py
 ```
 Live app:
-```<https://machinefailureclassification-qvkaq849zn6rlxtvl6n7yp.streamlit.app/>
+```bash
+[Streamlit app](https://machinefailureclassification-qvkaq849zn6rlxtvl6n7yp.streamlit.app/)
 ```
 ---
 
