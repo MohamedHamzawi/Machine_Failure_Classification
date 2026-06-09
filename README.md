@@ -597,6 +597,8 @@ Day5_project_optimization.ipynb
 Day6_Model_tuning_and_interpretation.ipynb
 Day7_Inference_reporting.ipynb
 ```
+The final trained model pipeline is saved in:
+models/final_model_pipeline.pkl
 
 ### 6. Run inference example
 
