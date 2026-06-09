@@ -605,7 +605,23 @@ models/final_model_pipeline.pkl
 ```bash
 python scripts/predict_example.py
 ```
+## Deployed App
 
+The model is deployed as an interactive Streamlit web app.
+
+Users can enter machine operating conditions and receive:
+
+- Failure probability
+- Final prediction
+- Adjustable decision threshold
+
+Run locally:
+
+```bash
+streamlit run app.py
+```
+```markdown
+Live app: <https://machinefailureclassification-qvkaq849zn6rlxtvl6n7yp.streamlit.app/>
 ---
 
 ## Project Summary
