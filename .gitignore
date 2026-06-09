@@ -10,10 +10,6 @@ data/raw/
 data/interim/
 data/processed/
 
-# Models
-models/*.pkl
-models/*.joblib
-
 # Environment
 .env
 .venv/
